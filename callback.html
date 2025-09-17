@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VaultBridge - Google Login Callback</title>
-  <style>
+  <style>                                                                                                                   
     body {
       display: flex;
       flex-direction: column;
@@ -35,16 +35,18 @@
   <pre id="codeBox">Loading...</pre>
 
   <script>
-    // Show the URL parameters
-    const params = new URLSearchParams(window.location.search);
-    const code = params.get('code');
+    // Get the authorization code if you need it later
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get("code");
+  
+    // Optional: store it in localStorage in case you want to use it later
     if (code) {
-      document.getElementById('codeBox').textContent =
-        "Authorization code: " + code + "\n\n(Use this code on your server to exchange for tokens)";
-    } else {
-      document.getElementById('codeBox').textContent =
-        "No code returned. Check your OAuth configuration.";
+      localStorage.setItem("google_auth_code", code);
     }
+  
+    // Redirect back to home page
+    window.location.href = "/vaultbridge/";  
   </script>
+                                                                                
 </body>
 </html>
