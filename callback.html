@@ -4,18 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VaultBridge - Google Login Callback</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      text-align: center;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+    pre {
+      background: #eee;
+      padding: 15px;
+      border-radius: 8px;
+      max-width: 90%;
+      word-wrap: break-word;
+    }
+  </style>
 </head>
 <body>
-  <h1>Processing Google Login…</h1>
+  <h1>Google Login Successful</h1>
+  <p>This is the redirect page. Here’s the data returned:</p>
+  <pre id="codeBox">Loading...</pre>
+
   <script>
+    // Show the URL parameters
     const params = new URLSearchParams(window.location.search);
     const code = params.get('code');
-
     if (code) {
-      document.body.innerHTML = "<h2>Login Successful! Code: " + code + "</h2>";
-      // Here you’d send `code` to your server to exchange for tokens
+      document.getElementById('codeBox').textContent =
+        "Authorization code: " + code + "\n\n(Use this code on your server to exchange for tokens)";
     } else {
-      document.body.innerHTML = "<h2>Login failed or user canceled.</h2>";
+      document.getElementById('codeBox').textContent =
+        "No code returned. Check your OAuth configuration.";
     }
   </script>
 </body>
