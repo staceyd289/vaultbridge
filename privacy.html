@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — VaultBridge</title>
+  <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-f148e67a-3b46-41ac-8f8b-e418cb37bafb" data-elfsight-app-lazy></div>
+  <link rel="icon" href="b3fabb08cd64e8db351e887a75f14821-removebg-preview.png">
+  <meta name="description" content="Read the Privacy Policy for VaultBridge." />
+  <style>
+    :root{
+      --accent:#375aeb;--bg:#f6f8ff;--card:#ffffff;--muted:#6b7280
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);line-height:1.6;color:#111827;}
+    header{background:var(--card);box-shadow:0 2px 6px rgba(0,0,0,0.06);position:sticky;top:0;z-index:100}
+    .nav-container{max-width:1200px;margin:0 auto;padding:12px 24px;display:flex;justify-content:space-between;align-items:center;position:relative;}
+    .logo{display:flex;align-items:center;gap:8px;font-weight:700;font-size:1.2rem;color:#111827;text-decoration:none}
+    .logo .mark{width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#6b8cff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+
+    /* Nav links */
+    nav{display:flex;gap:24px;}
+    nav a{text-decoration:none;color:#111827;font-size:0.95rem;font-weight:500;}
+    nav a:hover{color:var(--accent)}
+
+    /* Mobile nav toggle button */
+    .menu-toggle {
+      display:none;
+      flex-direction:column;
+      justify-content:space-between;
+      width:24px;
+      height:18px;
+      cursor:pointer;
+    }
+    .menu-toggle span {
+      display:block;
+      height:3px;
+      background:#111827;
+      border-radius:2px;
+      transition:0.3s;
+    }
+
+    /* Mobile nav styling */
+    @media(max-width:768px){
+      nav {
+        display:none;
+        flex-direction:column;
+        background:var(--card);
+        position:absolute;
+        top:100%;
+        right:0;
+        width:100%;
+        box-shadow:0 6px 18px rgba(27,31,50,0.06);
+        padding:16px 24px;
+      }
+      nav.open {
+        display:flex;
+      }
+      .menu-toggle {display:flex;}
+    }
+
+    .container{max-width:800px;margin:24px auto;padding:24px;background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(27,31,50,0.06)}
+    h1,h2,h3{margin-bottom:12px}
+    p{margin-bottom:16px;color:#333}
+    footer{text-align:center;font-size:0.9rem;color:var(--muted);margin:24px 0}
+    @media(max-width:600px){
+      .container{margin:12px;padding:16px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="mark">V</div>
+        VaultBridge
+      </a>
+
+      <!-- Menu toggle button for mobile -->
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="request.html">Request</a>
+        <li><a href="learnmore.html">Learn More</a></li>
+
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p>Last updated: September 15, 2025</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>We collect the information you voluntarily provide when you submit a recovery request, such as your name, phone number, email address, and any documents you upload.</p>
+
+    <h2>2. How We Use Your Information</h2>
+    <p>We use your information solely to assist with your legitimate account recovery request and to communicate with you regarding your case.</p>
+
+    <h2>3. Data Storage and Security</h2>
+    <p>Your data is stored securely. We implement appropriate technical and organizational measures to protect your information from unauthorized access, disclosure, alteration, or destruction.</p>
+
+    <h2>4. Sharing of Information</h2>
+    <p>We do not sell or rent your information. We may share your information only when required by law or with your explicit consent.</p>
+
+    <h2>5. Your Rights</h2>
+    <p>You may request to access, correct, or delete your personal data at any time by contacting us at privacy@example.com.</p>
+
+    <h2>6. Cookies and Tracking</h2>
+    <p>Our website does not use invasive tracking. Minimal technical cookies may be used to improve your experience.</p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. We encourage you to review it periodically.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at privacy@example.com.</p>
+  </div>
+
+  <footer>
+    © 2025 VaultBridge — Privacy Policy
+  </footer>
+
+  <script>
+    // Menu toggle script
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+
+    menuToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('open');
+    });
+
+    // Close menu when clicking a link (mobile)
+    document.querySelectorAll('#mainNav a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>

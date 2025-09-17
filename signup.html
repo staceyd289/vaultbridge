@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Login or Sign Up to VaultBridge and enjoy secure digital services.">
+  <title>Login & Sign Up - VaultBridge</title>
+  <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-f148e67a-3b46-41ac-8f8b-e418cb37bafb" data-elfsight-app-lazy></div>
+  <link rel="icon" href="b3fabb08cd64e8db351e887a75f14821-removebg-preview.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      min-height: 100vh;
+    }
+
+    /* ---------- header / menu ---------- */
+    header {
+      width: 100%;
+      background: #6b8cff;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: opacity 0.3s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* hamburger */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 4px;
+    }
+
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background: #fff;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #6b8cff;
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        padding: 15px 0;
+      }
+
+      nav.open {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+    /* ---------- auth container ---------- */
+    .page-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .auth-container {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 450px;
+      padding: 40px 30px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .auth-container h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .auth-toggle {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      background: #f0f0f0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .auth-toggle button {
+      flex: 1;
+      padding: 15px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      color: #555;
+      transition: all 0.3s ease;
+    }
+
+    .auth-toggle button.active {
+      background: #6b8cff;
+      color: #fff;
+    }
+
+    form {
+      display: none;
+      text-align: left;
+    }
+
+    form.active {
+      display: block;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 1rem;
+    }
+
+    button.submit-btn {
+      width: 100%;
+      background: linear-gradient(45deg, #6b8cff, #6b8cff);
+      color: #fff;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button.submit-btn:hover {
+      background: #6b8cff;
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px #6b8cff;
+    }
+
+    .alt-link {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    .alt-link a {
+      color: #6b8cff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 500px) {
+      .auth-container {
+        padding: 30px 20px;
+      }
+
+      .auth-toggle button {
+        font-size: 0.9rem;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Menu -->
+  <header>
+    <a href="#" class="logo">VaultBridge</a>
+    <nav id="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <div class="page-content">
+    <div class="auth-container">
+      <h1>Welcome</h1>
+      <div class="auth-toggle">
+        <button id="loginTab" class="active" onclick="showForm('login')">Login</button>
+        <button id="signupTab" onclick="showForm('signup')">Sign Up</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="loginForm" class="active">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" placeholder="Enter your email" required>
+        
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" placeholder="Enter your password" required>
+
+        <button type="submit" class="submit-btn">Login</button>
+        <p class="alt-link">Don’t have an account? <a href="#" onclick="showForm('signup')">Sign Up</a></p>
+      </form>
+
+      <!-- Sign Up Form -->
+      <form id="signupForm">
+        <label for="signup-name">Full Name</label>
+        <input type="text" id="signup-name" placeholder="Enter your full name" required>
+
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" placeholder="Enter your email" required>
+
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" placeholder="Create a password" required>
+
+        <button type="submit" class="submit-btn">Sign Up</button>
+        <p class="alt-link">Already have an account? <a href="#" onclick="showForm('login')">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Toggle between Login & Sign Up forms
+    function showForm(form) {
+      document.getElementById('loginTab').classList.remove('active');
+      document.getElementById('signupTab').classList.remove('active');
+      document.getElementById('loginForm').classList.remove('active');
+      document.getElementById('signupForm').classList.remove('active');
+
+      if (form === 'login') {
+        document.getElementById('loginTab').classList.add('active');
+        document.getElementById('loginForm').classList.add('active');
+      } else {
+        document.getElementById('signupTab').classList.add('active');
+        document.getElementById('signupForm').classList.add('active');
+      }
+    }
+
+    // Menu toggle on mobile
+    const menuToggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

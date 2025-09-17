@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VaultBridge — Secure your digital life</title>
+  <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-f148e67a-3b46-41ac-8f8b-e418cb37bafb" data-elfsight-app-lazy></div>
+  <link rel="icon" href="b3fabb08cd64e8db351e887a75f14821-removebg-preview.png">
+  <meta name="description" content="VaultBridge — secure communication, account recovery, and digital protection for individuals and businesses." />
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#7c3aed; 
+      --accent-2:#06b6d4; 
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,#071023 0%, #07182a 55%, #061018 100%);
+      color:#e6eef7;
+      -webkit-font-smoothing:antialiased;
+      line-height:1.45;
+    }
+
+    .wrap{
+      max-width:1150px;
+      margin:0 auto;
+      padding:28px;
+    }
+
+    /* ---------- header ---------- */
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      position:relative;
+    }
+    .logo{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      text-decoration:none;
+      color:inherit;
+    }
+    .logo .mark{
+      width:46px;height:46px;border-radius:10px;
+      background: linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:grid;place-items:center;
+      box-shadow: 0 6px 18px rgba(124,58,237,0.18);
+      font-weight:700;
+    }
+    .logo h1{font-size:18px;margin:0}
+
+    nav{
+      display:flex;gap:18px;align-items:center;
+      transition:all .3s ease;
+    }
+    nav a{
+      color:var(--muted);
+      text-decoration:none;
+      padding:8px 10px;border-radius:8px;
+      transition:all .22s ease;
+      font-weight:600;font-size:14px;
+    }
+    nav a:hover{
+      color:#fff;
+      background:linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      transform:translateY(-3px);
+      box-shadow: 0 6px 20px rgba(2,6,23,0.6);
+    }
+    .cta{
+      padding:10px 14px;border-radius:10px;
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:white;font-weight:700;text-decoration:none;
+      box-shadow: 0 10px 30px rgba(6,182,212,0.08);
+      transition:transform .18s ease, box-shadow .18s;
+    }
+    .cta:hover{ transform:translateY(-4px); box-shadow: 0 18px 40px rgba(6,182,212,0.16); }
+
+    /* hamburger icon */
+    .menu-toggle{
+      display:none;
+      flex-direction:column;
+      width:30px;
+      cursor:pointer;
+      gap:6px;
+    }
+    .menu-toggle span{
+      height:3px;
+      background:#fff;
+      border-radius:2px;
+      transition:all .3s ease;
+    }
+    .menu-toggle.active span:nth-child(1){
+      transform:rotate(45deg) translateY(8px);
+    }
+    .menu-toggle.active span:nth-child(2){
+      opacity:0;
+    }
+    .menu-toggle.active span:nth-child(3){
+      transform:rotate(-45deg) translateY(-8px);
+    }
+
+    /* mobile nav styles */
+    @media (max-width:768px){
+      nav{
+        position:absolute;
+        top:60px;
+        right:0;
+        background:#0b1220;
+        flex-direction:column;
+        width:200px;
+        padding:16px;
+        border-radius:12px;
+        display:none;
+      }
+      nav.show{
+        display:flex;
+      }
+      .menu-toggle{display:flex;}
+    }
+
+    /* ---------- hero ---------- */
+    .hero{
+      display:grid;
+      grid-template-columns: 1fr 480px;
+      gap:28px;
+      align-items:center;
+      margin-top:36px;
+    }
+    .hero-left h2{
+      font-size:48px;
+      line-height:1.02;
+      margin:0 0 18px 0;
+      letter-spacing:-0.6px;
+    }
+    .hero-left p{color:var(--muted);margin:0 0 20px 0;max-width:66%}
+    .hero-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .btn-outline{
+      padding:12px 16px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);
+      color: white;background:transparent;font-weight:600;text-decoration:none;
+      transition:all .18s ease;
+    }
+    .btn-outline:hover{ transform:translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.6) }
+
+    .hero-card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius: var(--radius);
+      padding:18px;
+      box-shadow: 0 10px 40px rgba(2,6,23,0.6);
+    }
+    .preview{
+      height:340px;border-radius:12px;overflow:hidden;background:
+      linear-gradient(180deg, rgba(7,11,15,0.55), rgba(7,11,15,0.2));
+      display:grid;grid-template-columns: 1fr 1fr;
+      gap:8px;padding:12px;
+    }
+    .preview .tile{
+      background:var(--glass);
+      border-radius:10px;padding:12px;
+      display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
+      transition: transform .35s cubic-bezier(.2,.9,.25,1), box-shadow .25s;
+    }
+    .tile h4{margin:0 0 6px 0;font-size:15px}
+    .tile p{margin:0;color:var(--muted);font-size:13px}
+    .tile:hover{
+      transform:translateY(-12px) scale(1.03) rotateZ(-1deg);
+      box-shadow: 0 18px 40px rgba(2,6,23,0.6);
+    }
+
+    /* ---------- features ---------- */
+    .features{
+      margin-top:42px;
+      display:grid;
+      grid-template-columns: repeat(3,1fr);
+      gap:18px;
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      padding:22px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);
+      transition: transform .28s ease, box-shadow .28s;
+    }
+    .card h3{margin:0 0 8px 0;font-size:16px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .card:hover{
+      transform:translateY(-12px);
+      box-shadow:0 30px 60px rgba(2,6,23,0.7);
+      border-color: rgba(124,58,237,0.22);
+    }
+    .icon{
+      width:44px;height:44px;border-radius:10px;display:grid;place-items:center;margin-bottom:12px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
+    .cta-strip{
+      margin-top:40px;
+      background: linear-gradient(90deg, rgba(124,58,237,0.12), rgba(6,182,212,0.06));
+      padding:18px;border-radius:12px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;
+    }
+    .cta-strip p{margin:0;color:#fff;font-weight:600}
+    .cta-strip a{background: #071727; padding:10px 14px;border-radius:10px;color:var(--accent);font-weight:700;text-decoration:none;
+      border:1px solid rgba(124,58,237,0.12); transition: all .18s ease;}
+    .cta-strip a:hover{ transform:translateY(-3px); box-shadow: 0 8px 30px rgba(124,58,237,0.08); }
+
+    footer{margin-top:40px;padding:16px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap}
+    footer a{color:var(--muted);text-decoration:none}
+    footer a:hover{color:#fff}
+
+    /* responsive hero & features */
+    @media (max-width:980px){
+      .hero{grid-template-columns: 1fr; padding-bottom:12px}
+      .hero-left p{max-width:100%}
+      .features{grid-template-columns: repeat(2,1fr)}
+    }
+    @media (max-width:640px){
+      .features{grid-template-columns:1fr}
+      .hero-left h2{font-size:32px}
+      .preview{grid-template-columns:1fr}
+      .preview .tile{align-items:center;text-align:center}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="logo" href="#">
+        <div class="mark">VB</div>
+        <div>
+          <h1>VaultBridge</h1>
+          <div style="font-size:12px;color:var(--muted)">Secure • Recover • Protect</div>
+        </div>
+      </a>
+
+      <!-- hamburger toggle -->
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
+
+      <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="how it works.html">How it works</a>
+        <a href="contact.html">Contact</a>
+        <a class="cta" href="signup.html">Get Started</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-left">
+          <h2 id="hero-title">Secure accounts. Smooth recovery. Trusted privacy.</h2>
+          <p>VaultBridge protects your online identity and helps you recover access safely when you need it. Built for individuals and teams who value security without friction.</p>
+          <div class="hero-actions">
+            <a class="cta" href="signup.html">Create a Vault</a>
+            <a class="btn-outline" href="">Explore features</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px;justify-content:space-between">
+            <div style="font-weight:700">Live overview</div>
+            <div style="font-size:13px;color:var(--muted)">Snapshots • 24h</div>
+          </div>
+
+          <div class="preview">
+            <div class="tile"><h4>Account Recovery</h4><p>Recovery workflows with time-bound codes and verified channels.</p></div>
+            <div class="tile"><h4>Secure Vaults</h4><p>Encrypted storage for secrets and recovery keys.</p></div>
+            <div class="tile"><h4>Team Access</h4><p>Role-based access and audit logs for teams.</p></div>
+            <div class="tile"><h4>Privacy Controls</h4><p>Advanced permissioning and secure sharing.</p></div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="features" class="features">
+        <div style="display:flex;align-items:flex-start;gap:12px;">
+          <div class="icon">🔐</div>
+          <div class="card">
+            <h3>End-to-end Encryption</h3>
+            <p>Military-grade encryption ensures only you and permitted parties can access stored data.</p>
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:flex-start;gap:12px;">
+          <div class="icon">🧩</div>
+          <div class="card">
+            <h3>Recovery Workflows</h3>
+            <p>Flexible recovery flows with multi-channel verification — SMS, email, 2FA and recovery codes.</p>
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:flex-start;gap:12px;">
+          <div class="icon">📊</div>
+          <div class="card">
+            <h3>Audit & Reporting</h3>
+            <p>Detailed logs and reports to help you track access and meet compliance needs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-strip">
+        <p>Ready to secure and simplify account recovery for your team?</p>
+        <div>
+          <a href="free trial.html">Start trial</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div>
+        <strong>VaultBridge</strong> — Secure • Recover • Protect<br />
+        support@vaultbridge.example
+      </div>
+      <div>
+        <a href="#">Privacy</a> &nbsp; · &nbsp;
+        <a href="#">Terms</a> &nbsp; · &nbsp;
+        <a href="#">Docs</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // toggle mobile nav
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('show');
+    });
+
+    // smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (ev)=>{
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target){
+          ev.preventDefault();
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+          // close mobile nav after click
+          navMenu.classList.remove('show');
+          menuToggle.classList.remove('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

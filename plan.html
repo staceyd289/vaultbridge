@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VaultBridge — Personalized Recovery Plan</title>
+  <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-f148e67a-3b46-41ac-8f8b-e418cb37bafb" data-elfsight-app-lazy></div>
+  <link rel="icon" href="b3fabb08cd64e8db351e887a75f14821-removebg-preview.png">
+  <meta name="description" content="Personalized Recovery Plan — VaultBridge. A clear roadmap tailored to your situation with safe communication tips and account protection steps." />
+  <style>
+    :root{
+      --bg: #0f1724;
+      --card: #0b1220;
+      --accent: #06b6d4;
+      --muted: #94a3b8;
+      --glass: rgba(255,255,255,0.03);
+      --radius: 12px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071021 0%,#071827 100%);color:#e6eef6;min-height:100vh}
+    .container{max-width:1100px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{display:flex;align-items:center;gap:10px}
+    .logo .mark{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{font-size:20px;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 18px}
+
+    .grid{display:grid;grid-template-columns:1fr 380px;gap:20px}
+    @media (max-width:980px){.grid{grid-template-columns:1fr}}
+
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .section-title h2{font-size:16px;margin:0}
+    .steps{display:flex;flex-direction:column;gap:12px}
+    .step{display:flex;gap:12px;align-items:flex-start}
+    .step .num{width:36px;height:36px;border-radius:8px;background:var(--glass);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+    .step p{margin:0;color:var(--muted)}
+
+    form label{display:block;margin-bottom:8px;font-size:13px}
+    input[type=text],input[type=email],textarea,select{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    textarea{min-height:110px}
+    .controls{display:flex;gap:8px;flex-wrap:wrap}
+    button{background:var(--accent);border:none;padding:10px 14px;border-radius:10px;color:#042024;font-weight:700;cursor:pointer}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    @media (max-width:520px){.checklist{grid-template-columns:1fr}}
+    .check{display:flex;gap:8px;align-items:center}
+    .check input{width:18px;height:18px}
+
+    .result{background:linear-gradient(180deg, rgba(6,182,212,0.06), rgba(124,58,237,0.03));padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);color:var(--muted)}
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.02);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">VB</div>
+        <div>
+          <h1>VaultBridge</h1>
+          <p class="muted" style="margin:0;font-size:13px">Personalized Recovery Plan — roadmap & safety guide</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid" aria-live="polite">
+      <section class="card">
+        <div class="section-title">
+          <h2>Personalized Recovery Plan</h2>
+          <div class="pill">Tailored roadmap</div>
+        </div>
+        <p class="lead">Fill the details on the right and press <strong>Generate Plan</strong>. VaultBridge will produce a step-by-step recovery roadmap and safety checklist you can follow immediately.</p>
+
+        <div class="steps" id="planPreview">
+          <div class="step">
+            <div class="num">1</div>
+            <div>
+              <strong>Initial Assessment</strong>
+              <p class="muted">Collect facts, identify compromised accounts, and note what information may be at risk.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num">2</div>
+            <div>
+              <strong>Containment</strong>
+              <p class="muted">Change passwords, enable MFA, disconnect devices, and freeze sensitive accounts.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num">3</div>
+            <div>
+              <strong>Communication & Reporting</strong>
+              <p class="muted">How to safely communicate with contacts and report the incident to providers and authorities.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num">4</div>
+            <div>
+              <strong>Recovery & Monitoring</strong>
+              <p class="muted">Restore accounts, review logs, and set up ongoing monitoring.</p>
+            </div>
+          </div>
+        </div>
+
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.04);margin:16px 0">
+        <div>
+          <h3 style="margin:0 0 8px">Safe Communication Tips</h3>
+          <ul class="muted">
+            <li>Use separate channels for sensitive info; avoid posting private links publicly.</li>
+            <li>Verify contacts through a second channel before responding to requests for money or data.</li>
+            <li>Prefer encrypted messaging and temporary links for sharing credentials — and then revoke access.</li>
+            <li>Keep records (screenshots, dates, and contact details) of suspicious messages for reporting.</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <aside class="card" aria-label="Recovery form">
+        <div class="section-title">
+          <h2>Build your plan</h2>
+          <span class="muted">Quick & private</span>
+        </div>
+
+        <form id="recoveryForm" onsubmit="return false;">
+          <label for="name">Full name (optional)</label>
+          <input id="name" name="name" type="text" placeholder="Jane Doe" />
+
+          <label for="email">Email (for plan delivery — optional)</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" />
+
+          <label for="incident">Describe the incident (short)</label>
+          <textarea id="incident" name="incident" placeholder="What happened? Which accounts were affected?" aria-describedby="incidentHelp"></textarea>
+          <div id="incidentHelp" class="muted" style="font-size:12px;margin-top:6px">Keep it short but specific: e.g. "Compromised email + banking alerts received on Aug 3."</div>
+
+          <label for="priority">Priority</label>
+          <select id="priority" name="priority">
+            <option value="high">High — financial or identity at risk</option>
+            <option value="medium">Medium — personal data or social accounts</option>
+            <option value="low">Low — suspicious but limited exposure</option>
+          </select>
+
+          <div style="height:12px"></div>
+
+          <div class="section-title" style="margin-bottom:8px">
+            <h2 style="font-size:14px;margin:0">Immediate checklist</h2>
+            <span class="muted">Tap to mark done</span>
+          </div>
+
+          <div class="checklist">
+            <label class="check"><input type="checkbox" id="chgPwd"> Change passwords</label>
+            <label class="check"><input type="checkbox" id="mfa"> Enable MFA</label>
+            <label class="check"><input type="checkbox" id="devices"> Sign out devices</label>
+            <label class="check"><input type="checkbox" id="bank"> Contact bank</label>
+          </div>
+
+          <div style="height:12px"></div>
+          <div class="controls">
+            <button id="generateBtn" type="button">Generate Plan</button>
+            <button id="clearBtn" type="button" class="btn-ghost">Clear</button>
+            <button id="copyBtn" type="button" class="btn-ghost">Copy Plan</button>
+          </div>
+
+          <div style="height:12px"></div>
+          <div class="result" id="resultBox" aria-live="polite">Your generated plan will appear here after you press <strong>Generate Plan</strong>.</div>
+        </form>
+
+        <footer>
+          <p style="margin:6px 0">VaultBridge — privacy-first. No data is sent anywhere unless you choose to email the plan.</p>
+        </footer>
+      </aside>
+    </main>
+
+  </div>
+
+  <script>
+    // Simple plan generator — all client-side. No network requests.
+    function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"}[c]});}
+
+    const form = document.getElementById('recoveryForm');
+    const generateBtn = document.getElementById('generateBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const copyBtn = document.getElementById('copyBtn');
+    const resultBox = document.getElementById('resultBox');
+
+    function buildPlan(){
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const incident = document.getElementById('incident').value.trim();
+      const priority = document.getElementById('priority').value;
+      const chgPwd = document.getElementById('chgPwd').checked;
+      const mfa = document.getElementById('mfa').checked;
+      const devices = document.getElementById('devices').checked;
+      const bank = document.getElementById('bank').checked;
+
+      const header = name ? `Personalized Recovery Plan — ${escapeHtml(name)}` : 'Personalized Recovery Plan';
+      let plan = `${header}\n\n`;
+      if(incident) plan += `Incident summary:\n${escapeHtml(incident)}\n\n`;
+
+      plan += 'Priority: ' + priority.toUpperCase() + '\n\n';
+
+      plan += 'Immediate actions:\n';
+      if(chgPwd) plan += '- Changed passwords for affected accounts (done)\n'; else plan += '- Change passwords for all affected accounts\n';
+      if(mfa) plan += '- Multi-factor authentication enabled (done)\n'; else plan += '- Enable multi-factor authentication on all important accounts\n';
+      if(devices) plan += '- Signed out all devices (done)\n'; else plan += '- Sign out active sessions and revoke unrecognized devices\n';
+      if(bank) plan += '- Contacted bank/financial provider (done)\n'; else plan += '- Contact bank/financial provider if financial info was exposed\n';
+
+      plan += '\nContainment steps:\n- Revoke third-party app access from email/social accounts\n- Rotate API keys or tokens if used\n- Audit recent login activity and IPs\n\n';
+
+      plan += 'Communication guidance:\n- Use a verified alternate channel to reach contacts about the incident\n- Do NOT share passwords or recovery codes over chat or email\n- If someone requests money, verify identity by calling a known number\n\n';
+
+      plan += 'Recovery & monitoring:\n- Restore 2FA backup codes and store offline\n- Run antivirus on all devices that accessed the accounts\n- Set up login alerts and a monitoring service if available\n\n';
+
+      plan += 'Notes:\n- Keep copies of communications and timestamps for reporting.\n';
+
+      if(email){
+        plan += `\nDelivery:\nAn email draft is prepared to ${escapeHtml(email)} (client-side only).`;
+      }
+
+      return plan;
+    }
+
+    generateBtn.addEventListener('click',()=>{
+      const planText = buildPlan();
+      resultBox.textContent = '';
+      // pretty render with line breaks
+      const pre = document.createElement('pre');
+      pre.style.whiteSpace='pre-wrap';
+      pre.style.margin=0;
+      pre.textContent = planText;
+      resultBox.appendChild(pre);
+    });
+
+    clearBtn.addEventListener('click',()=>{form.reset(); resultBox.textContent='Your generated plan will appear here after you press Generate Plan.'});
+
+    copyBtn.addEventListener('click',()=>{
+      const text = buildPlan();
+      navigator.clipboard && navigator.clipboard.writeText(text).then(()=>{
+        copyBtn.textContent='Copied!';
+        setTimeout(()=>copyBtn.textContent='Copy Plan',1400);
+      }).catch(()=>{
+        // fallback
+        const ta = document.createElement('textarea'); ta.value=text; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy'); copyBtn.textContent='Copied!'; setTimeout(()=>copyBtn.textContent='Copy Plan',1400);}catch(e){alert('Copy failed — select the text in the box and press Ctrl+C')} ta.remove();
+      })
+    });
+
+    // accessibility: focus first input on load
+    window.addEventListener('load',()=>{document.getElementById('incident').focus()});
+  </script>
+</body>
+</html>

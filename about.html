@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn more about VaultBridge – our mission, vision, and the team behind secure and seamless digital solutions.">
+  <title>About Us - VaultBridge</title>
+  <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-f148e67a-3b46-41ac-8f8b-e418cb37bafb" data-elfsight-app-lazy></div>
+  <link rel="icon" href="b3fabb08cd64e8db351e887a75f14821-removebg-preview.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header / Navbar */
+    header {
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #6b8cff;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #6b8cff;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background: #333;
+      transition: 0.3s ease;
+    }
+
+    /* About Section */
+    .about-section {
+      width: 90%;
+      max-width: 1000px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    .about-section h1 {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .about-section p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .about-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #6b8cff;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      nav {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #fff;
+        width: 200px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        display: none;
+        flex-direction: column;
+        padding: 15px 0;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <div class="container">
+      <a href="#" class="logo">VaultBridge</a>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" style="color:#6b8cff;">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="signup.html">Login</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h1>About VaultBridge</h1>
+    <p>VaultBridge is dedicated to delivering secure, seamless digital solutions that empower businesses and individuals. Our mission is to bridge the gap between security and innovation.</p>
+
+    <div class="about-cards">
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p>To provide cutting-edge technology that prioritizes security and user experience.</p>
+      </div>
+      <div class="card">
+        <h3>Our Vision</h3>
+        <p>To become a trusted leader in secure digital transformation worldwide.</p>
+      </div>
+      <div class="card">
+        <h3>Our Team</h3>
+        <p>We’re a group of passionate developers, designers, and strategists working to create meaningful change.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Toggle Menu On Click
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+
+    menuToggle.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
