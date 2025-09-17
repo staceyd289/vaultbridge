@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VaultBridge - Google Login Callback</title>
+</head>
+<body>
+  <h1>Processing Google Login…</h1>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+
+    if (code) {
+      document.body.innerHTML = "<h2>Login Successful! Code: " + code + "</h2>";
+      // Here you’d send `code` to your server to exchange for tokens
+    } else {
+      document.body.innerHTML = "<h2>Login failed or user canceled.</h2>";
+    }
+  </script>
+</body>
+</html>
